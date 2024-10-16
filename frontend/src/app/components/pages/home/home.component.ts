@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgxStarsComponent } from 'ngx-stars';
 import { FoodService } from 'src/app/service/food.service';
 import { Food } from 'src/app/shared/models/Food';
 
@@ -12,5 +13,4 @@ export class HomeComponent {
   constructor(private foodService:FoodService){
     this.foods = this.foodService.getAll();
   }
-
 }
